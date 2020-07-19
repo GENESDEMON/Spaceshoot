@@ -98,7 +98,7 @@ local function fireLaser()
 	newLaser.y = ship.y
 	newLaser:toBack()
 
-	transition.to( newLaser, { y=-40, time=500,
+	transition.to( newLaser, { y=-40, time=15,
 		onComplete = function() display.remove( newLaser ) end
 	} )
 end
@@ -267,7 +267,7 @@ function scene:create( event )
 
 	explosionSound = audio.loadSound( "audio/explosion.wav" )
 	fireSound = audio.loadSound( "audio/fire.wav" )
-	musicTrack = audio.loadStream( "audio/80s-Space-Game_Looping.wav" )
+	musicTrack = audio.loadStream( "audio/Midnight-Crawlers_Looping.wav" )
 end
 
 

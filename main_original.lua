@@ -104,7 +104,7 @@ local function fireLaser()
 	newLaser.y = ship.y
 	newLaser:toBack()
 
-	transition.to( newLaser, { y=-40, time=500,
+	transition.to( newLaser, { y=-40, time=15,
 		onComplete = function() display.remove( newLaser ) end
 	} )
 end
